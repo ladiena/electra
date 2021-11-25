@@ -18,6 +18,7 @@ It features
 - IndieAuth
 - h-card
 - Dropdown menu
+- Margin and side notes
 
 You can run a static website with this theme using [ghost-static-site-generator](https://github.com/Fried-Chicken/ghost-static-site-generator) or [gui](https://github.com/huangyuzhang/gui/). Note that paid memberships are not possible this way, and although free newsletter are possible, they are not recommended.
 
