@@ -1,0 +1,27 @@
+<article class="post-card {{post_class}} container h-entry">
+
+  <section class="post-card_text-container">
+    <header class="post-card_meta">
+    {{#if tags}}
+
+<span class="p-category"><strong>{{tags separator=" · "}}</strong></span>
+        {{/if}} &bull; <time class="post-card__meta_date dt-published" datetime="{{date format='YYYY-MM-DD'}}"> <em>{{date format="D MMMM, YYYY"}}</em></time>
+</div>    </header>
+      <h2 class="post-card_title">
+        {{#if featured}}
+        <span style="font-style: normal !important">  &#x2605;</span>
+        {{/if}}
+        <a href="{{url}}" class="u-url p-name">
+          {{title}}
+        </a>
+      </h2>
+      <p class="post-card_excerpt p-summary">
+        {{excerpt}}      </p>
+
+        <p class="read-more">
+        &rArr; <em><a class="read-more__link u-url" href="{{url}}">{{t "Read more"}}
+        </a></em>
+        </p>
+
+ </section> {{!-- end post-teaser__text-container --}}
+</article>

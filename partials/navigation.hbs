@@ -1,0 +1,14 @@
+{{#if isSecondary}}
+  <nav class="site-footer__navigation" role="navigation">
+            {{#foreach navigation}}
+            <li class="nav-{{slug}}">
+                <a href="{{url absolute="true"}}">{{label}}</a>                </a>
+            </li> &nbsp; &nbsp;
+        {{/foreach}}
+    </ul> <br><br>
+{{else}}
+<nav class="main-nav"><ul class="nav">
+        {{#foreach navigation}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+{{/if}}

@@ -1,0 +1,7 @@
+collections:
+  /:
+    permalink: /{slug}/
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

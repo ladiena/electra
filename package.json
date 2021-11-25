@@ -1,0 +1,37 @@
+{
+    "name": "electra",
+    "description": "A Ghost theme with microformats",
+    "demo": "https://electra-theme.netlify.app",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=4.0.0",
+        "ghost-api": "v4"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.png",
+        "mobile": "assets/screenshot-mobile.png"
+    },
+    "author": {
+        "name": "Daniela Moraes",
+        "email": "daniela8@tutamail.com"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme",
+        "tufte css",
+        "minimal",
+        "microformats"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ladiena/electra.git"
+    },
+    "config": {
+        "posts_per_page": 4,
+        "image_sizes": {
+        }
+   }
+
+}

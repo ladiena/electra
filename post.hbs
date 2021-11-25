@@ -1,0 +1,34 @@
+{{!< default}}
+
+{{>content-header}}
+
+<main class="container content" id="content">
+
+  <article class="post {{post_class}} h-entry">
+
+    {{#post}}
+
+      <header class="post__header">
+        <h1 class="post__title p-name">{{title}}</h1>
+        {{#if tags}}
+
+          <p>
+              <time class="dt-published" datetime="{{date format='YYYY-MM-DD'}}"> <em>{{date format="D MMMM, YYYY"}}</em></time> &bull;
+    <span class="p-category"><strong>{{tags separator=" · "}}</strong>
+        </span>  </p>
+        {{/if}}
+      </header>
+
+      <section class="e-content">
+            {{content}}
+
+
+          </section>
+            {{> comment}}
+
+
+
+    {{/post}}
+
+  </article>
+</main>

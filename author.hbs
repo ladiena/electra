@@ -1,0 +1,61 @@
+{{!< default}}
+
+{{> content-header}}
+
+{{#author}}
+  <header class="author-profile container">
+
+    <h1 class="author-profile__name">{{name}}</h1>
+
+    {{#if bio}}
+      <p class="author-profile__bio">{{bio}}</p>
+      {{/if}}
+  </header>
+  <section class="author-profile__meta">
+      {{#if location}}
+        <span class="author-info__location inline-block">
+        <strong>{{location}}</strong>
+        </span>
+        &ensp; &bull; &ensp;
+      {{/if}}
+
+      {{#if website}}
+        <span class="author-info__website inline-block">
+  <a href="{{website}}"><strong>Website</strong></a>
+        </span>
+        &ensp; &bull;         &ensp;
+      {{/if}}
+
+
+      {{#if twitter}}
+        <span class="author-info__twitter inline-block">
+     <a href="{{twitter_url}}"><strong>Twitter</strong></a>
+        </span>
+        &ensp; &bull;         &ensp;
+      {{/if}}
+
+
+      {{#if facebook}}
+        <span class="author-info__facebook inline-block">
+<a href="{{facebook_url}}"><strong>Facebook</strong></a>
+        </span>
+        &ensp;
+       &bull;         &ensp;      {{/if}}
+
+      <span class="author-info__rss  inline-block">
+        <a href="{{url}}rss">
+          RSS</a>
+
+      </span>
+{{! end author meta }}
+
+  </section>
+{{/author}}
+
+{{! The main content area on the homepage }}
+<main class="content">
+
+  {{! The tag below includes the post loop - partials/loop.hbs }}
+  {{> "loop"}}
+
+</main>
