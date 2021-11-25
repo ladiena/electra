@@ -6,7 +6,7 @@ A minimal Ghost theme with microformats
 
 **Current ver:** 1.0.0
 
-[Demo](https://electra.netlify.app)
+[Demo](https://electra-theme.netlify.app)
 
 ## Features
 
